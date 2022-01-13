@@ -1,5 +1,4 @@
 package com.q1.form;
-import java.awt.Color;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -13,7 +12,6 @@ public class RegistrationFormAll extends JFrame{
 		Border blackline = BorderFactory.createLineBorder(Color.black);
 		JPanel panel = new JPanel();
 		panel.setBounds(5,5,500,100);
-		panel.setLayout(null);
 		panel.setBorder(blackline);
 		
 		JLabel fName = new JLabel("First Name");

@@ -13,7 +13,6 @@ public class RegistrationFormAll extends JFrame{
 		Border blackline = BorderFactory.createLineBorder(Color.black);
 		JPanel panel = new JPanel();
 		panel.setBounds(5,5,500,100);
-		panel.setLayout(null);
 		panel.setBorder(blackline);
 		
 		JLabel fName = new JLabel("First Name");

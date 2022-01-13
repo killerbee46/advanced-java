@@ -1,0 +1,13 @@
+package com.java.eventHandling;
+
+import javax.swing.*;
+
+public class MouseHandling extends JFrame{
+	public MouseHandling(){
+		setTitle("Mouse Handling");
+		setBounds(0,0,400,400);
+		setLayout(null);
+		
+		
+	}
+}

@@ -28,13 +28,13 @@ public class RegistrationFormAll extends JFrame{
 		lName.setBounds(320,5,150,30);
 		JTextField lNameField = new JTextField();
 		lNameField.setBounds(320,40,150,30);
-		add(fName);
-		add(fNameField);
-		add(mName);
-		add(mNameField);
-		add(lName);
-		add(lNameField);
-		add(panel);
+		panel.add(fName);
+		panel.add(fNameField);
+		panel.add(mName);
+		panel.add(mNameField);
+		panel.add(lName);
+		panel.add(lNameField);
+		panel.add(panel);
 		
 		JLabel address = new JLabel("Address:");
 		address.setBounds(5,110,150,30);
