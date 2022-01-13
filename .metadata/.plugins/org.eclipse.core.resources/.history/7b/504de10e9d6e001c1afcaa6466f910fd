@@ -1,0 +1,12 @@
+package com.q1.form;
+import javax.swing.*;
+
+public class First extends JFrame{
+	public void main(String[] args){
+		setTitle("Registration");
+		setBounds(10,10,700,700);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

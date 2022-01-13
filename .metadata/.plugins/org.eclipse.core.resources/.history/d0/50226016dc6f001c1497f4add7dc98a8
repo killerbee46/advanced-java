@@ -1,0 +1,20 @@
+package com.q1.form;
+import javax.swing.*;
+
+public class RegistrationFormAll extends JFrame{
+	public RegistrationFormAll(){
+		setTitle("Texas Registration Form");
+		setBounds(0,0,900,700);
+		setLayout(null);
+		
+		JPanel panel = new JPanel("");
+		panel.setBounds(10,10,500,200);
+		add(panel);
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args){
+		new RegistrationFormAll();
+	}
+}

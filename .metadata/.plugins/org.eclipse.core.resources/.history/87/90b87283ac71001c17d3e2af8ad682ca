@@ -1,0 +1,35 @@
+package com.q1.form;
+import java.awt.Color;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+
+public class RegistrationFormAll extends JFrame{
+	public RegistrationFormAll(){
+		setTitle("Texas Registration Form");
+		setBounds(0,0,900,700);
+		setLayout(null);
+		
+		Border blackline = BorderFactory.createLineBorder(Color.black);
+		JPanel panel = new JPanel();
+		panel.setBounds(0,0,500,100);
+		panel.setBorder(blackline);
+		
+		JLabel fName = new JLabel("First Name");
+		fName.setBounds(5,5,150,30);
+		JLabel mName = new JLabel("Middle Name");
+		mName.setBounds(155,5,150,30);
+		JLabel lName = new JLabel("Last Name");
+		lName.setBounds(210,5,150,30);
+		add(fName);
+		add(mName);
+		add(lName);
+		add(panel);
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args){
+		new RegistrationFormAll();
+	}
+}

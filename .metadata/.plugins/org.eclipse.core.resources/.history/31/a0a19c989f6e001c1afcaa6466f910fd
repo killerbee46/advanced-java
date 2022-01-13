@@ -1,0 +1,30 @@
+package com.q1.form;
+
+import javax.swing.*;
+
+public class Second extends JFrame{
+	public Second(){
+		setTitle("Password");
+		setBounds(10,10,100,100);
+		setLayout(null);
+		
+		JLabel name = new JLabel("Name: ");
+		name.setBounds(20,20,50,50);
+		add(name);
+		
+		JTextField nameField=new JTextField();
+		nameField.setBounds(90,15,150,30);
+		add(nameField);
+		
+		JLabel password = new JLabel("Password: ");
+		password.setBounds(20,20,50,50);
+		add(password);
+		
+		JPasswordField passwordField = new JPasswordField();
+		passwordField.setBounds(30,30,50,50);
+		add(passwordField);
+	}
+	public static void main(String[] args){
+		Second App = new Second();
+	}
+}
