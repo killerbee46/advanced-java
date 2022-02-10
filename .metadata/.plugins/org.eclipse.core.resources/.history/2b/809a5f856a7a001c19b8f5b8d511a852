@@ -1,0 +1,9 @@
+package com.adjava.LayoutManagement;
+
+import java.awt.*;
+
+import javax.swing.JFrame;
+
+public class FlowLayoutDemo extends JFrame{
+	public FlowLayout
+}

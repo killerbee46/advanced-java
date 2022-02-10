@@ -18,30 +18,35 @@ public class MouseHandling extends JFrame{
 		hover.addMouseListener(new MouseListener(){
 
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				System.out.println("Clicked");
 				
 			}
 
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				System.out.println("Entered");
 				
 			}
 
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				System.out.println("Exited");
 				
 			}
 
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				System.out.println("Pressed");
 				
 			}
 
 			public void mouseReleased(MouseEvent arg0) {
-				
+				System.out.println("Released");
 				
 			}
 			
 		});
+		add(hover);
+		setVisible(true);
+	}
+	public static void main(String[] args){
+		new MouseHandling();
 	}
 }

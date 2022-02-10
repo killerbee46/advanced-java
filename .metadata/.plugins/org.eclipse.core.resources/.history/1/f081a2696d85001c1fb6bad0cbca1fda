@@ -1,0 +1,17 @@
+package com.texas.crud;
+
+import java.sql.*;
+
+public class ScrollableResultSet {
+	public static void main(String[] args) throws SQLException {
+		Connection con = DBConnect.getDBConnection();
+		
+		try {
+			Statement stm = con.createStatement();
+			String sql = "select * from student";
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

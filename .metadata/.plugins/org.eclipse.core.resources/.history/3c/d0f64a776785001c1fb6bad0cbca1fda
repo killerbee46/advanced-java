@@ -1,0 +1,26 @@
+package com.texas.crud;
+
+import java.sql.*;
+
+public class InsertDemo {
+public static void main(String[] args) throws SQLException {
+	try {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		String url="jdbc:mysql://localhost:3306/ad_java";
+		String user = "root";
+		String password = "";
+		
+		String sql = "INSERT into student (firstName,middleName,lastName,Dob) values(?,?,?,?) ";
+		
+		Connection con = DriverManager.getConnection(url, user, password);
+		
+		PreparedStatement pstm = con.prepare
+		
+		
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+}

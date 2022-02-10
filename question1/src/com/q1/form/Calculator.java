@@ -1,7 +1,10 @@
 package com.q1.form;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
-public class Calculator extends JFrame{
+public class Calculator extends JFrame implements ActionListener{
 	public Calculator(){
 		setTitle("Calculator");
 		setBounds(0,0,500,500);
@@ -16,17 +19,25 @@ public class Calculator extends JFrame{
 		add(num1);
 		add(num2);
 		
-		JTextField num1Field = new JTextField();
-		num1Field.setBounds(10, 40,100,30);
+		final JTextField txtNum1 = new JTextField();
+		txtNum1.setBounds(10, 40,100,30);
 		
 		JTextField num2Field = new JTextField();
 		num2Field.setBounds(150, 40,100,30);
 		
-		add(num1Field);
+		add(txtNum1);
 		add(num2Field);
 		
 		JButton add = new JButton("+");
 		add.setBounds(10,90,50,30);
+		add.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				String num1 = txtNum1.getText();
+				System.out.println(num1);
+				
+			}
+		});
 		
 		JButton substract = new JButton("-");
 		substract.setBounds(70,90,50,30);
@@ -57,6 +68,10 @@ public class Calculator extends JFrame{
 	}
 	public static void main(String[] args){
 		new Calculator();
+	}
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

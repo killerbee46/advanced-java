@@ -1,6 +1,0 @@
-package com.q1.form;
-import javax.swing.*;
-
-public class Calculator extends JFrame{
-
-}
